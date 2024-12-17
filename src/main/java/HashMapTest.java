@@ -1,5 +1,6 @@
 package src.main.java;
 
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -26,6 +27,29 @@ public class HashMapTest extends Thread{
 
         map.put(222, 111);
         map.put(999, 111);
+
+
+        ConcurrentHashMap<String, Integer> cmap = new ConcurrentHashMap<>();
+
+        cmap.put("First", 10);
+        cmap.put("Second", 20);
+        cmap.put("Third", 30);
+        cmap.put("Fourth", 40);
+
+        Iterator<String> iterator = cmap.keySet().iterator();
+
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            System.out.println(key);
+            cmap.put("Fifth", 50);
+        }
+
+        for(Map.Entry<Integer, Integer> entry:map.entrySet()){
+
+            System.out.println(entry.getKey());
+            map.put(12333, 6888);
+
+        }
 
         HashMapTest thread = new HashMapTest();
         thread.start();

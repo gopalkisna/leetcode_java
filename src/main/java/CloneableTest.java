@@ -21,20 +21,14 @@ class Movie implements Cloneable{
     }
 }
 
-
 public class CloneableTest {
-
-
     public static void main(String[] args) {
 
-        try
-        {
+        try {
             String moviePrototype  = PrototypeFactory.getInstance(PrototypeFactory.ModelType.MOVIE).toString();
             System.out.println(moviePrototype);
-
         }
-        catch (CloneNotSupportedException e)
-        {
+        catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
 

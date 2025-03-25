@@ -6,8 +6,7 @@ public class RecursionSum {
 
         //Sum of first n numbers
 
-        int n = 5
-                ;
+        int n = 5;
 
         System.out.println(sum(n));
     }

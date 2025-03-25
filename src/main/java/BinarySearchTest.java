@@ -26,5 +26,8 @@ public class BinarySearchTest {
             }
         }
 
+        System.out.println("Didn't Find Element");
+
+
     }
 }

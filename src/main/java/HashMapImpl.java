@@ -67,7 +67,7 @@ public class HashMapImpl<K, V> {
     }
 
     public V put(K key, V val){
-        V ret = null;
+        V value = null;
         int hashCode = key.hashCode();
         int location = Hashing(hashCode);
         Entry<K, V> entry = null;
@@ -75,7 +75,7 @@ public class HashMapImpl<K, V> {
         entry = table[location];
 
         if(entry != null && entry.getK() == key){
-            ret = entry.getV();
+            value = entry.getV();
         }else{
             Entry<K,V> newEntry = new Entry<>();
             newEntry.setK(key);
@@ -84,7 +84,7 @@ public class HashMapImpl<K, V> {
             size++;
         }
 
-        return ret;
+        return value;
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,7 @@ public class GCD {
 
     public static void main(String[] args) {
 
-        int n1 = 10,n2 = 20;
+        int n1 = 24,n2 = 20;
 
         System.out.println(gcd(n1, n2));
     }

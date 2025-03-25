@@ -1,5 +1,6 @@
 package src.main.java;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
@@ -7,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class HashMapTest extends Thread{
 
-    static private Map<Integer, Integer> map = new ConcurrentHashMap<>();
+    static private Map<Integer, Integer> map = new HashMap<>();
 
     public void run(){
 

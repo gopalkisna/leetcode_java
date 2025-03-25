@@ -20,6 +20,7 @@ class LazySingleton{
 public class LazySingletonTest {
 
     public static void main(String[] args) {
+
         System.out.println(LazySingleton.getInstance());
     }
 }

@@ -43,21 +43,17 @@ public class ComparatorTest
 {
     public static void main(String[] args) {
 
-
         Product p1 = new Product("a", 123);
         Product p2 = new Product("b", 456);
         Product p3 = new Product(null, 789);
-
 
         List<Product> productList = new ArrayList<>();
         productList.add(p1);
         productList.add(p2);
         productList.add(p3);
 
-
        // Collections.sort(productList, (o1, o2) -> o1.getName().compareTo(o2.getName()));
         Collections.sort(productList, Comparator.comparing(Product::getName));
-
 
         System.out.println(productList);
 

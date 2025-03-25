@@ -1,5 +1,6 @@
 package src.main.java;
 
+//With no repeating characters
 import java.util.HashSet;
 import java.util.Set;
 

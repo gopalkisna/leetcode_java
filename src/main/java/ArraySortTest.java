@@ -6,7 +6,6 @@ public class ArraySortTest {
 
     public static void main(String[] args) {
 
-
         int[][] arr = {{1,5}, {3,4}, {7,9}, {2, 3}};
 
         Arrays.sort(arr, (a, b) -> a[0] - b[0]);
@@ -24,6 +23,5 @@ public class ArraySortTest {
             System.out.print("}");
             System.out.print(",");
         }
-
     }
 }

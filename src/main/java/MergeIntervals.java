@@ -10,8 +10,9 @@ public class MergeIntervals {
     public static void main(String[] args) {
 
 
-        int[][] intervals = {{1,6}, {1,6}, {8,14}};
-        Arrays.sort(intervals, Comparator.comparingInt(i -> i[0]));
+        int[][] intervals = {{1,6}, {1,8}, {8,14}};
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        //Arrays.sort(intervals, Comparator.comparingInt(i -> i[0]));
         List<int[]> result = new ArrayList<>();
 
         int[] newInterval = intervals[0];

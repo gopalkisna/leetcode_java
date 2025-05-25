@@ -21,7 +21,6 @@ public class ArrayDifference {
         Set<Integer> nums1Set = Arrays.stream(nums1).boxed().collect(Collectors.toSet());
         Set<Integer> nums2Set = Arrays.stream(nums2).boxed().collect(Collectors.toSet());
 
-
         for(int n:nums1){
             boolean checkAvailability = nums2Set.contains(n);
             if(!checkAvailability){

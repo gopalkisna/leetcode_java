@@ -53,7 +53,8 @@ public class ComparatorTest
         productList.add(p3);
 
        // Collections.sort(productList, (o1, o2) -> o1.getName().compareTo(o2.getName()));
-        Collections.sort(productList, Comparator.comparing(Product::getName));
+        Collections.sort(productList, (o1, o2) -> o2.getProductId() - o1.getProductId());
+        //Collections.sort(productList, Comparator.comparing(Product::getName));
 
         System.out.println(productList);
 

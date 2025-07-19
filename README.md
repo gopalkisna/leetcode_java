@@ -1,2 +1,1 @@
-Readme file
->>>Gopala Krishna Ramu
+Readme file - Gopala Krishna Ramu
